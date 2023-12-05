@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container {
     width: 100%;
 }
@@ -24,6 +28,21 @@ li {
 
 a {
     text-decoration: none;
+}
+
+/* Utils */
+.pbar {
+    height: 5px;
+    background-color: #5A5A5A;
+    margin: 0 1rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.current-progress {
+    position: absolute;
+    background-color: #C1C1C1;
+    height: 100%;
 }
 
 /* Struttura principale */
@@ -103,13 +122,13 @@ footer {
 .pages li {
     width: 25%;
     font-size: 0.8rem;
+    font-weight: 700;
 }
 
 .pages a {
     color: #7D7F84;
     line-height: 30px;
     display: block;
-    width: 80%;
     margin: 0 auto;
     position: relative;
 }
@@ -131,7 +150,7 @@ footer {
 .recently-played,
 .creatoxte,
 .artisti-popolari {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .recently-played .row,
@@ -153,6 +172,12 @@ footer {
 .music-title {
     color: white;
     margin-bottom: 20px;
+}
+
+.music-title p {
+    font-size: 0.8rem;
+    padding-top: 10px;
+    color:#7D7F84;
 }
 
 .card h3 {
@@ -254,11 +279,11 @@ footer .f-right {
     gap: 5px;
 }
 
-/* footer area centrale */
+/* Footer area centrale */
 .m-buttons {
     font-size: 1.2rem;
     line-height: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -272,4 +297,15 @@ footer .f-right {
     display: flex;
     font-size: 0.7rem;
     justify-content: center;
+    align-items: center;
 }
+
+.progress-bar {
+    width: 50%
+}
+
+.progress-bar .current-progress {
+    width: 20%;
+}
+
+/* Footer area destra */
