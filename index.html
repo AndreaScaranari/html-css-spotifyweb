@@ -9,14 +9,17 @@
 </head>
 
 <body>
-    <main>
-
+    <div class="wrapper">
+        <!-- Sidebar -->
         <nav id="sidebar">
+            <!-- Sidebar in alto -->
             <div class="sb-top">
+                <!-- Logo -->
                 <div class="logo">
                     <img src="assets/img/logo-small.svg" alt="Logo Spotify" class="smalllogo">
                     <img src="assets/img/logo.svg" alt="Logo Spotify" class="biglogo hidden">
                 </div>
+                <!-- Home-Search-Library -->
                 <nav class="sb-nav">
                     <ul>
                         <li>
@@ -32,8 +35,8 @@
                         </li>
                     </ul>                    
                 </nav>
-                <div class="sb-playlist hidden">
-                    
+                <!-- Playlist -->
+                <div class="sb-playlist hidden">                   
                     <p><i class="fa-solid fa-square-plus"></i> Crea Playlist</p>
                     <ul>
                         <li>Nome Playlist</li>
@@ -47,12 +50,17 @@
                 </div>
             </div>
 
+            <!-- Sidebar in basso -->
             <div class="sb-bottom">
+                <!-- Download -->
                 <div class="download">
                     <img src="assets/img/download.svg" alt="">
                     <span class="hidden">Installa l'app</span>
                 </div>
+
                 <hr class="hidden">
+
+                <!-- Pagina personale -->
                 <div class="user">
                     <img src="assets/img/profile.svg" alt="">
                     <span class="hidden">John Doe</span>
@@ -60,11 +68,18 @@
             </div>
         </nav>
 
+        <!-- Lato destro schermo -->
         <div class="container">
-            <div id="topbar">
+
+            <!-- Barra in alto -->
+            <header id="topbar">
                 <a href="#" class="button">EFFETTUA L'UPGRADE</a>
-            </div>
-            <section id="music">
+            </header>
+
+            <!-- Area Musica -->
+            <main id="music">
+
+                <!-- Classifiche -->
                 <nav class="pages">
                     <ul class="pages-nav">
                         <li><a href="#">IN EVIDENZA</a></li>
@@ -76,6 +91,7 @@
                     </ul>
                 </nav>
 
+                <!-- Ascotlate di recente -->
                 <div class="recently-played">
                     <div class="music-title">
                         <h2>Recently played</h2>
@@ -126,6 +142,7 @@
                     </div>
                 </div>
 
+                <!-- Creato per te -->
                 <div class="creatoxte">
                     <div class="music-title">
                         <h2>Creato per John Doe</h2>
@@ -147,6 +164,7 @@
                     </div>
                 </div>
 
+                <!-- Artisti Popolari -->
                 <div class="artisti-popolari">
                     <div class="music-title">
                         <h2>Creato per John Doe</h2>
@@ -167,12 +185,12 @@
                         </div>
                     </div>
                 </div>
-                </div>
 
-
-            </section>
+            </main>
         </div>
-    </main>
+    </div>
+
+    <!-- Footer -->
     <footer>
 
     </footer>
