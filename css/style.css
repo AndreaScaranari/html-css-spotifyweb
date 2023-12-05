@@ -46,6 +46,27 @@ a {
     border-radius: 5px;
 }
 
+.progress-marker {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 50% -50%;
+    border: 5px solid #C1C1C1;
+    background-color: #C1C1C1;
+    display: none;
+}
+
+.current-progress:hover {
+    background-color: #ADFF2F;
+}
+
+.current-progress:hover .progress-marker{
+    display: block;
+}
+
 /* Struttura principale */
 .wrapper {
     display: flex;
@@ -179,6 +200,7 @@ footer {
     font-size: 0.8rem;
     padding-top: 10px;
     color:#7D7F84;
+    font-weight: 700;
 }
 
 .card h3 {
@@ -199,6 +221,7 @@ footer {
 
 .card p a {
     color: #7D7F84;
+    font-weight: 700;
 }
 
 /* Hover grid album */
@@ -254,6 +277,7 @@ footer .f-right {
     display: flex;
     height: 50%;
     text-align: left;
+    cursor: pointer;
 }
 
 .f-left > * {
@@ -264,20 +288,37 @@ footer .f-right {
     height: 100%;
 }
 
+.fl-album-data {
+    font-size: 0.8;
+}
+
 .aut-song,
 .fl-icons {
- color: #7D7F84;
+    color: #7D7F84;
+}
+
+.brano:hover,
+.artista:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .aut-song {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    font-weight: 700;
 }
 
 .fl-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 5px;
+}
+
+.fl-icons .fa-heart:hover,
+.fl-icons .fa-folder:hover{
+    color: #fff;
 }
 
 /* Footer area centrale */
@@ -288,10 +329,15 @@ footer .f-right {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .m-buttons .fa-circle-play {
     font-size: 2rem;
+}
+
+.m-buttons .fa-circle-play:hover {
+    scale: 1.2;
 }
 
 .m-player {
