@@ -106,7 +106,7 @@ footer {
 }
 
 .pages a {
-    color: #D2D2D2;
+    color: #7D7F84;
     line-height: 30px;
     display: block;
     width: 80%;
@@ -167,8 +167,12 @@ footer {
     margin-bottom: 10px;
 }
 
-.card a {
+.card h3 a {
     color: white;
+}
+
+.card p a {
+    color: #7D7F84;
 }
 
 /* Hover grid album */
@@ -176,7 +180,7 @@ footer {
     position: relative;
 }
 
-.fa-circle-play {
+.card-img .fa-circle-play {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -207,12 +211,65 @@ footer {
     align-items: center;
     text-align: center;
     color: white;
+    padding: 0 10px;
 }
 
-footer > * {
+footer .f-mid {
+    width: 40%;
+}
+
+footer .f-left,
+footer .f-right {
+    width: 30%;
+}
+
+/* Footer area sinistra */
+.f-left {
+    display: flex;
+    height: 50%;
+    text-align: left;
+}
+
+.f-left > * {
     width: calc(100%/3);
 }
 
-.f-left {
+.fl-cover img {
+    height: 100%;
+}
+
+.aut-song,
+.fl-icons {
+ color: #7D7F84;
+}
+
+.aut-song {
+    font-size: 0.7rem;
+}
+
+.fl-icons {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* footer area centrale */
+.m-buttons {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.m-buttons .fa-circle-play {
+    font-size: 2rem;
+}
+
+.m-player {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
 }
