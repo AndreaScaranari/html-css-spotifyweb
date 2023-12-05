@@ -30,7 +30,6 @@ a {
 .wrapper {
     display: flex;
     height: calc(100vh - 80px);
-
 }
 
 .container {
@@ -62,13 +61,11 @@ a {
 #music {
     background-color: #141922;
     padding: 0 20px;
-    
 }
 
 footer {   
     height: 80px;
     background-color: #282828;
-
 }
 
 /* Sidebar */
@@ -201,4 +198,21 @@ footer {
 
 .card-img:hover .fa-circle-play {
     display: block;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+footer > * {
+    width: calc(100%/3);
+}
+
+.f-left {
+    display: flex;
 }
