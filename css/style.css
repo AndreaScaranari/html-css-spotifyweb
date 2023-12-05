@@ -43,6 +43,7 @@ a {
     position: absolute;
     background-color: #C1C1C1;
     height: 100%;
+    border-radius: 5px;
 }
 
 /* Struttura principale */
@@ -309,3 +310,22 @@ footer .f-right {
 }
 
 /* Footer area destra */
+.f-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.f-right > *{
+    display: block;
+}
+
+.volume-bar {
+    width: 60%;
+    margin: 0;
+}
+
+.volume-bar .current-progress {
+    width: 15%;
+}
+
