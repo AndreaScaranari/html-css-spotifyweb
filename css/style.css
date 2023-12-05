@@ -29,6 +29,8 @@ a {
 /* Struttura principale */
 .wrapper {
     display: flex;
+    height: calc(100vh - 80px);
+
 }
 
 .container {
@@ -54,12 +56,13 @@ a {
     justify-content: flex-end;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #music {
     background-color: #141922;
     padding: 0 20px;
-    height: calc(100vh - 160px);
+    
 }
 
 footer {   
@@ -96,7 +99,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    row-gap: 20px;
+    row-gap: 10px;
     padding: 20px 0;
 }
 
@@ -107,6 +110,24 @@ footer {
 
 .pages a {
     color: #D2D2D2;
+    line-height: 30px;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pages a:hover {
+    color: white;
+}
+
+.pages a:active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    right: 35%;
+    border-bottom: 1px solid #ADFF2F;
 }
 
 /* Grid con album */
@@ -151,4 +172,33 @@ footer {
 
 .card a {
     color: white;
+}
+
+/* Hover grid album */
+.card-img {
+    position: relative;
+}
+
+.fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: white;
+    font-size: 5rem;
+    display: none;
+}
+
+.card-img:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-img:hover .fa-circle-play {
+    display: block;
 }
