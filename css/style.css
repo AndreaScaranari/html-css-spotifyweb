@@ -408,7 +408,7 @@ footer .f-right {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .fl-icons .fa-heart:hover,
@@ -518,5 +518,31 @@ footer .f-right {
     .pages li {
         width: calc(100%/3);
     }
-
 }
+
+/* Porting a 768px */
+@media screen and (min-width:768px) {
+    .fl-icons {
+        flex-direction: row;
+    }
+
+    .pages li {
+        width: calc(100%/5);
+    }
+
+    .recently-played .col,
+    .creatoxte .col,
+    .artisti-popolari .col {
+        width: 25%;
+    }
+
+    .card-text h3 {
+        font-size: 1rem;
+    }
+
+    .card-text p {
+        font-size: 0.7rem;
+    }
+}
+
+/* Porting a 1180px */
