@@ -176,6 +176,7 @@ footer {
 .sb-playlist h4 {
     color: white;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .sb-playlist i {
@@ -186,10 +187,12 @@ footer {
 
 .sb-playlist p {
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .sb-playlist li {
     line-height: 2rem;
+    cursor: pointer;
 }
 
 hr {
@@ -369,10 +372,7 @@ footer .f-right {
     display: flex;
     height: 50%;
     text-align: left;
-}
-
-.f-left > * {
-    width: calc(100%/3);
+    padding-right: 10px;
 }
 
 .f-left * * {
@@ -381,10 +381,12 @@ footer .f-right {
 
 .fl-cover img {
     height: 100%;
+    margin-right: 1rem;
 }
 
 .fl-album-data {
     font-size: 0.8;
+    margin-right: 25px;
 }
 
 .aut-song,
@@ -457,6 +459,7 @@ footer .f-right {
 .f-right {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 1rem;
 }
 
@@ -520,8 +523,8 @@ footer .f-right {
     }
 }
 
-/* Porting a 768px */
-@media screen and (min-width:768px) {
+/* Porting a 830px */
+@media screen and (min-width:830px) {
     .fl-icons {
         flex-direction: row;
     }
@@ -543,6 +546,32 @@ footer .f-right {
     .card-text p {
         font-size: 0.7rem;
     }
+
+    .m-buttons {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 /* Porting a 1180px */
+@media screen and (min-width:1180px) {
+    .pages li {
+        width: calc(100%/8);
+    }
+
+    .recently-played .col,
+    .creatoxte .col,
+    .artisti-popolari .col {
+        width: calc(100%/6);
+    }
+
+    .m-buttons {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .volume-bar {
+        width: 30%;
+        margin: 0;
+    }
+}
