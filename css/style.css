@@ -60,11 +60,11 @@ a {
     display: none;
 }
 
-.current-progress:hover {
+.pbar:hover .current-progress{
     background-color: #ADFF2F;
 }
 
-.current-progress:hover .progress-marker{
+.pbar:hover .progress-marker{
     display: block;
 }
 
@@ -145,6 +145,19 @@ footer {
     border-radius: 50%;
 }
 
+.sb-nav a{
+    position: relative;
+}
+
+.sb-nav .active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    border-left: 2px solid #ADFF2F;
+}
+
 /* Topbar */
 #topbar a {
     color: white;
@@ -186,7 +199,16 @@ footer {
     color: white;
 }
 
-.pages a:active::after {
+/* .pages a:active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    right: 35%;
+    border-bottom: 1px solid #ADFF2F;
+} */
+
+.pages .active::after {
     content: "";
     position: absolute;
     bottom: 0;
